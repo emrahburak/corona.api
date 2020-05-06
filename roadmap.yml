@@ -1,9 +1,0 @@
-genel:
-  bölüm-1:
-    -github üzerinden verisağlayıcı bir link bulunack ve sağlayıcı herhangi bir api sağlayıcı ile test
-    edilecek.
-    -Golang işleyen main.go prosedürü oluşturulduktan sonra...
-    veriyi get edilecek.
-    - Gelen veri parse edilip json a çevrilecek..
-    - Burak selim şenyurt un Gorm makalesi uygulanacak..
-    
