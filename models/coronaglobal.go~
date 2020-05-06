@@ -1,0 +1,32 @@
+package models
+
+import (
+	"github.com/jinzhu/gorm"
+)
+
+type CoronaGlobal struct {
+	gorm.Model
+	Confirmed int `json:"confirmed"`
+	Deaths    int `json:"deaths"`
+	Recovered int `json:"recovered"`
+}
+
+type CoronaGlobalCountries struct {
+	gorm.Model
+	Location    string `json:"location"`
+	CountryCode string `json:"country_code"`
+	Latitude    int    `json:"latitude"`
+	Longitude   int    `json:"longitude"`
+	Confirmed   int    `json:"confirmed"`
+	Deaths      int    `json:"deaths"`
+	Recovered   int    `json:"recovered"`
+	Update      string `json:"update"`
+}
+
+// type CoronaGlobalModel struct {
+// 	gorm.Model
+
+// 	Confirmed int `gorm:"not null; size:30"`
+// 	Deaths    int `gorm:"not null; size:30"`
+// 	Recovered int `gorm:"not null; size:30"`
+// }
